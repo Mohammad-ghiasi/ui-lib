@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    // TYPE CHECKING
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+
+    // MODULES
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    // JAVASCRIPT SUPORT
+    "allowJs": true,
+
+    // EMIT
+    "declaration": true,
+    "types": [],
+    "noEmit": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "dist",
+
+    // EDITOR SUPPORT
+    "disableSizeLimit": false,
+    "plugins": [],
+
+    // INTEROP CONSTRAINTS
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // LANGUAGE AND ENVIRONMENT
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES6"],
+
+    // COMPLETENESS
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "*.ts",
+    "*.d.ts",
+    "*.config.mjs",
+    "*.config.ts",
+    ".storybook/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "storybook-static",
+    "*.stories.ts",
+    "*.stories.tsx",
+    "*.test.ts",
+    "*.test.tsx"
+  ]
+}
